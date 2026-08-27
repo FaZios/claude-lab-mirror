@@ -1,50 +1,37 @@
-# Dashboard — claude-config
-_Auto-generato da dashboard-keeper · Ultimo refresh: 2026-05-13 14:30_
+# claude-config — Dashboard
+
+_Auto-aggiornato da `project_status_updater.py` — 2026-08-23T00:19:50_
 
 ## Status
-
 | Campo | Valore |
-|---|---|
-| Stato | PROD-STABLE |
-| Stack | Bash · Python · YAML · config rules (no runtime, infra config) |
-| Repo | github.com/FaZios/claude-config (privato) |
-| Branch attivo | main |
-| Avanzamento | ~85% (S1 5/5 done 2026-05-13, 3 pending user actions) |
+|-------|--------|
+| Health | ACTIVE |
+| Branch corrente | `main` |
+| Last commit | f6adeb1 learned: adb shell mangia lo stdin dei cicli, e dirname vuoto copia la radice del device (2026-08-22) |
+| Commit ultimi 30g | 204 |
+| Sentrux Q | n/a |
 
-## Attivita ultimi 30g
+## Stack
+- ?
+- Compose deploy: no
 
-- Commit: 127
-- Ultimo commit: `3181ad3` fix(bridge): HTTPS clone + gh auth token fallback for PAT (2026-05-13)
+## Files chiave
+- `agents/`
+- `assets/`
+- `book4-bundle/`
+- `commands/`
+- `configs/`
+- `dev/`
+- `docs/`
+- `doctor/`
+- `dotfiles/`
+- `fable-monolith/`
 
-## Code metrics
+## Riferimenti
+- CLAUDE.md: present
+- PROJECT_STATUS.md: present
+- .upstream-sources.toml: present
+- HARVEST-FINDINGS.md: absent
 
-- LoC: n/a (config, scripts bash/python, regole markdown)
-- Test: n/a
-- Sentrux Q: 8.598/10.000 (audit 2026-03-30 — 2 file lunghi + 1 fn)
-
-## Dipendenze interne (cross-progetto)
-
-| Direzione | Progetto | Nota |
-|---|---|---|
-| Servisce | tutti i progetti | regole globali CLAUDE.md, skills, ADR, deploy scripts |
-| Contiene ADR per | browser-pool | ADR-0001 engine-pluggable + ADR-0002 antibot-sota |
-
-## Deploy state
-
-- Pi5: not-deployed (config repository)
-- Host: `~/.claude/` su tutti i device (PC, Book4, Pi5)
-- Healthcheck: n/a
-
-## Open gaps
-
-- **[PENDING USER]** claude-lab-mirror repo provisioning (S1 action utente)
-- **[PENDING USER]** Book4 drift verify (S1 action utente)
-- **[WATCH]** Sentrux 0.6.x upstream watch (S1 action utente)
-- **[ARCH]** 2 file > 500 righe: `docs/superpowers/plans/2026-03-27-webauthn-biometric-auth.md` (1571), `skills/skill-rules.json` (1226). Nota: docs ignorabili se non modificati
-- **[MEMORY]** Sistema `memory/` DEPRECATO — ora `~/pi-ops/OPS-LOG.md` + `RUNBOOKS.md`
-
-## Prossimi passi suggeriti
-
-1. **claude-lab-mirror** — provisioning repo (azione utente pendente da S1)
-2. **Book4 drift** — verificare drift rispetto a PC config (azione utente pendente)
-3. **Sentrux 0.6.x** — watch per upstream release (watch passivo)
+## Last refresh
+- 2026-08-23T00:19:50 (SessionStart auto)
