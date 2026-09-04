@@ -1,14 +1,14 @@
 # claude-config — Dashboard
 
-_Auto-aggiornato da `project_status_updater.py` — 2026-08-23T00:19:50_
+_Auto-aggiornato da `project_status_updater.py` — 2026-09-01T17:19:26_
 
 ## Status
 | Campo | Valore |
 |-------|--------|
 | Health | ACTIVE |
 | Branch corrente | `main` |
-| Last commit | f6adeb1 learned: adb shell mangia lo stdin dei cicli, e dirname vuoto copia la radice del device (2026-08-22) |
-| Commit ultimi 30g | 204 |
+| Last commit | 92e2f35 memory: persist auto-memory banks (1 file toccati) (2026-09-01) |
+| Commit ultimi 30g | 413 |
 | Sentrux Q | n/a |
 
 ## Stack
@@ -34,4 +34,4 @@ _Auto-aggiornato da `project_status_updater.py` — 2026-08-23T00:19:50_
 - HARVEST-FINDINGS.md: absent
 
 ## Last refresh
-- 2026-08-23T00:19:50 (SessionStart auto)
+- 2026-09-01T17:19:26 (SessionStart auto)
